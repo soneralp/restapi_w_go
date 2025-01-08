@@ -5,7 +5,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// MetricsMiddleware her isteği kayıt altına alan middleware
 func MetricsMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		endpoint := c.Request.URL.Path
@@ -23,7 +22,6 @@ func MetricsMiddleware() gin.HandlerFunc {
 	}
 }
 
-// trackRequest metrik kaydını gerçekleştiren fonksiyon
 func trackRequest(endpoint string, userID interface{}) {
 	var query string
 	var args []interface{}

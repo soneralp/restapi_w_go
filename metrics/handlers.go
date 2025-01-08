@@ -5,7 +5,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// GetMetrics tüm metrikleri döndüren handler
 func GetMetrics(c *gin.Context) {
 	rows, err := db.DB.Query(`
 		SELECT 

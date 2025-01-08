@@ -4,7 +4,6 @@ import (
 	"example.com/rest-api/db"
 )
 
-// trackRequest metrik kaydını gerçekleştiren fonksiyon
 func trackRequest(endpoint string, userID interface{}) {
 	var query string
 	var args []interface{}
